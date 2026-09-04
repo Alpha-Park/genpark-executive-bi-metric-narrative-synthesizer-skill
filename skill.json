@@ -1,0 +1,42 @@
+{
+  "name": "genpark-executive-bi-metric-narrative-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Executive BI KPI metric narrative synthesizer transforming numeric variance into C-suite executive briefings.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "data-analytics",
+  "tags": [
+    "executive-narrative",
+    "kpi-reporting",
+    "tableau-pulse",
+    "business-intelligence",
+    "metric-briefing"
+  ],
+  "inputs": {
+    "kpi_name": {
+      "type": "string"
+    },
+    "current_value": {
+      "type": "number"
+    },
+    "previous_value": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "narrative_id": {
+      "type": "string"
+    },
+    "variance_points": {
+      "type": "number"
+    },
+    "executive_summary_sentence": {
+      "type": "string"
+    },
+    "executive_memo_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
